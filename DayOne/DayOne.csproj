@@ -9,8 +9,4 @@
     <AssemblyName>AdventOfCode2023.DayOne</AssemblyName>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Inputs\" />
-  </ItemGroup>
-
 </Project>
