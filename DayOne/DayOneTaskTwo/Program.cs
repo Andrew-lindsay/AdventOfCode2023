@@ -1,12 +1,7 @@
-﻿using System.Reflection;
-using System.Reflection.PortableExecutable;
-using System.Text.RegularExpressions;
-using System.Threading;
+﻿using System.Text.RegularExpressions;
 
 namespace AdventOfCode2023.DayOne {
     public class Program {
-
-
 
         static void Main(string[] args) {
             string digitPattern = @"(\d|zero|one|two|three|four|five|six|seven|eight|nine)";
