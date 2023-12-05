@@ -1,4 +1,4 @@
-﻿namespace DayTwoTaskOne {
+﻿namespace DayTwoTaskTwo {
     internal class Program {
         static void Main(string[] args) {
             string filePath = @"Inputs\input";
