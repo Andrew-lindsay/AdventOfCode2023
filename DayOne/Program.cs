@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using System.Reflection.PortableExecutable;
+using System.Text.RegularExpressions;
 
 namespace AdventOfCode2023.DayOne {
     public class Program {
@@ -16,49 +17,25 @@ namespace AdventOfCode2023.DayOne {
 
             string? line = null;
             int count = 0;
-            List<int> results = new List<int>();
+            long total = 0;
             while ((line = file.ReadLine()) != null) {
                 count++;
-                char? firstDigit = null;
-                char? secondDigit = null;
 
-                int leftIndex = 0;
-                for (leftIndex = 0; leftIndex < line.Length; leftIndex++) {
-                    char c = line[leftIndex];
+                MatchCollection matches = Regex.Matches(line, @"\d");
 
-                    if (!Char.IsDigit(c)) {
-                        continue;
-                    }
-
-                    firstDigit = c;
-                    break;
-                }
-
-                for (int rightIndex = line.Length - 1; rightIndex >= leftIndex; rightIndex--) {
-                    char c = line[rightIndex];
-
-                    if (!Char.IsDigit(c)) {
-                        continue;
-                    }
-
-                    secondDigit = c;
-                    break;
-                }
-
-                if (firstDigit == null && secondDigit == null) {
+                if (matches.Count == 0) {
                     Console.WriteLine($"No digits found in line {count}");
                     continue;
                 }
 
-                if (firstDigit != null && secondDigit == null) {
-                    secondDigit = firstDigit;
-                }
+                string? firstDigit = matches[0].Value;
+                string? secondDigit = matches[^1].Value;
 
                 int lineResult = int.Parse($"{firstDigit}{secondDigit}");
-                results.Add(lineResult);
+                total += lineResult;
             }
 
-            Console.WriteLine($"Total: {results.Sum()}");
+            Console.WriteLine(total);
         }
     }
 }
