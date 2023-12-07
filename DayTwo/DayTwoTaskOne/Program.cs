@@ -7,9 +7,9 @@ namespace AdventOfCode2023.DayTwoTaskOne {
 
             // only 12 red cubes, 13 green cubes, and 14 blue cubes
             var maxColourValues = new Dictionary<string, int>() {
-                {"red", 12 },
-                {"green", 13 },
-                {"blue", 14 },
+                { "red", 12 },
+                { "green", 13 },
+                { "blue", 14 },
             };
 
             using StreamReader file = File.OpenText(filePath);
