@@ -16,3 +16,6 @@ bld/
 
 .vs
 [iI]nputs/
+
+Properties/
+launchSettings.json

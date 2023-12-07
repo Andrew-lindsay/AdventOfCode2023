@@ -5,21 +5,28 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD55D58A-0B00-46AF-AD02-7A2E50AEA27F}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DayOne", "DayOne", "{5EA7FF27-CCEF-4E23-BF2B-8A5ED7C552B5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day1", "Day1", "{5EA7FF27-CCEF-4E23-BF2B-8A5ED7C552B5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DayOneTaskOne", "DayOne\DayOneTaskOne\DayOneTaskOne.csproj", "{D92988E2-A161-457D-9F9B-1B9FDC689737}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayOneTaskTwo", "DayOne\DayOneTaskTwo\DayOneTaskTwo.csproj", "{AE02BC16-BA1E-4ACB-B357-C0A91D8355ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DayOneTaskTwo", "DayOne\DayOneTaskTwo\DayOneTaskTwo.csproj", "{AE02BC16-BA1E-4ACB-B357-C0A91D8355ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayTwoTaskOne", "DayTwo\DayTwoTaskOne\DayTwoTaskOne.csproj", "{2944DF42-1B19-42BA-BD8B-3C4C2CFF0D46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DayTwoTaskOne", "DayTwo\DayTwoTaskOne\DayTwoTaskOne.csproj", "{2944DF42-1B19-42BA-BD8B-3C4C2CFF0D46}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DayTwo", "DayTwo", "{18005522-5B5B-4C84-8541-9593789D9375}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day2", "Day2", "{18005522-5B5B-4C84-8541-9593789D9375}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayTwoTaskTwo", "DayTwo\DayTwoTaskTwo\DayTwoTaskTwo.csproj", "{2ECFFDD7-D925-4DF9-AD98-DAF199AACFD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DayTwoTaskTwo", "DayTwo\DayTwoTaskTwo\DayTwoTaskTwo.csproj", "{2ECFFDD7-D925-4DF9-AD98-DAF199AACFD1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared\Shared.csproj", "{49551FDE-63FC-48CC-BFAC-4E753161F245}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DayThreeTaskOne", "DayThree\DayThreeTaskOne\DayThreeTaskOne.csproj", "{ADFF29A2-76E0-4DA3-913C-EE4AEF76D7EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day3", "Day3", "{A3DC6F91-2720-45F2-A2EE-9A8CE85D8399}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +50,14 @@ Global
 		{2ECFFDD7-D925-4DF9-AD98-DAF199AACFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ECFFDD7-D925-4DF9-AD98-DAF199AACFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ECFFDD7-D925-4DF9-AD98-DAF199AACFD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49551FDE-63FC-48CC-BFAC-4E753161F245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49551FDE-63FC-48CC-BFAC-4E753161F245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49551FDE-63FC-48CC-BFAC-4E753161F245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49551FDE-63FC-48CC-BFAC-4E753161F245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADFF29A2-76E0-4DA3-913C-EE4AEF76D7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADFF29A2-76E0-4DA3-913C-EE4AEF76D7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADFF29A2-76E0-4DA3-913C-EE4AEF76D7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADFF29A2-76E0-4DA3-913C-EE4AEF76D7EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +67,7 @@ Global
 		{AE02BC16-BA1E-4ACB-B357-C0A91D8355ED} = {5EA7FF27-CCEF-4E23-BF2B-8A5ED7C552B5}
 		{2944DF42-1B19-42BA-BD8B-3C4C2CFF0D46} = {18005522-5B5B-4C84-8541-9593789D9375}
 		{2ECFFDD7-D925-4DF9-AD98-DAF199AACFD1} = {18005522-5B5B-4C84-8541-9593789D9375}
+		{ADFF29A2-76E0-4DA3-913C-EE4AEF76D7EE} = {A3DC6F91-2720-45F2-A2EE-9A8CE85D8399}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9A8086E-59DB-467C-9B3C-27F9D1599D88}

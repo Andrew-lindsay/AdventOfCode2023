@@ -1,30 +1,25 @@
 ﻿using System.Text.RegularExpressions;
+using AdventOfCode2023.Shared;
 
-namespace AdventOfCode2023.DayOne {
+namespace DayOneTaskTwo {
     public class Program {
+        public static void Main(string[] args) {
+            string filePath = FileUtility.GetFilePathOrExit(args);
 
-        static void Main(string[] args) {
             string digitPattern = @"(\d|zero|one|two|three|four|five|six|seven|eight|nine)";
 
-            var digitMapping = new Dictionary<string, string>(){ 
-                {"zero", "0"},
-                {"one", "1"},
-                {"two", "2"},
-                {"three", "3"},
-                {"four", "4"},
-                {"five", "5"},
-                {"six", "6"},
-                {"seven", "7"},
-                {"eight", "8"},
-                {"nine", "9"},
+            var digitMapping = new Dictionary<string, string>(){
+                {"zero", "0" },
+                {"one", "1" },
+                {"two", "2" },
+                {"three", "3" },
+                {"four", "4" },
+                {"five", "5" },
+                {"six", "6" },
+                {"seven", "7" },
+                {"eight", "8" },
+                {"nine", "9" },
             };
-
-            string filePath = @"Inputs\input";
-
-            if (!File.Exists(filePath)) {
-                Console.WriteLine("File Not Found");
-                Environment.Exit(-1);
-            }
 
             using StreamReader file = File.OpenText(filePath);
 

@@ -1,12 +1,9 @@
-﻿namespace DayTwoTaskTwo {
-    internal class Program {
-  static void Main(string[] args) {
-            string filePath = @"Inputs\input";
+﻿using AdventOfCode2023.Shared;
 
-            if (!File.Exists(filePath)) {
-                Console.WriteLine("File Not Found");
-                Environment.Exit(-1);
-            }
+namespace AdventOfCode2023.DayTwoTaskTwo {
+    internal class Program {
+        public static void Main(string[] args) {
+            string filePath = FileUtility.GetFilePathOrExit(args);
 
             using StreamReader file = File.OpenText(filePath);
 

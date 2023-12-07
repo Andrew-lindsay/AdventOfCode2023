@@ -1,18 +1,15 @@
-﻿namespace DayTwoTaskOne {
-    internal class Program {
-        static void Main(string[] args) {
-            string filePath = @"Inputs\input";
+﻿using AdventOfCode2023.Shared;
 
-            if (!File.Exists(filePath)) {
-                Console.WriteLine("File Not Found");
-                Environment.Exit(-1);
-            }
+namespace AdventOfCode2023.DayTwoTaskOne {
+    internal class Program {
+        public static void Main(string[] args) {
+            string filePath = FileUtility.GetFilePathOrExit(args);
 
             // only 12 red cubes, 13 green cubes, and 14 blue cubes
             var maxColourValues = new Dictionary<string, int>() {
                 {"red", 12 },
                 {"green", 13 },
-                {"blue", 14},
+                {"blue", 14 },
             };
 
             using StreamReader file = File.OpenText(filePath);

@@ -1,17 +1,10 @@
-﻿using System.Reflection;
-using System.Reflection.PortableExecutable;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
+using AdventOfCode2023.Shared;
 
 namespace AdventOfCode2023.DayOne {
     public class Program {
-        static void Main(string[] args) {
-
-            string filePath = @"Inputs\input";
-
-            if (!File.Exists(filePath)) {
-                Console.WriteLine("File Not Found");
-                Environment.Exit(-1);
-            }
+        public static void Main(string[] args) {
+            string filePath = FileUtility.GetFilePathOrExit(args);
 
             using StreamReader file = File.OpenText(filePath);
 
