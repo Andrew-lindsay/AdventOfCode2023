@@ -14,5 +14,11 @@ namespace DayThreeTaskOne {
 
             return false;
         }
+
+        public List<SchematicNumber> NumbersInRange(int symbolIndex) {
+            return this.Numbers
+                .Where(i => (i.StartIndex - 1) <= symbolIndex && symbolIndex <= (i.EndIndex + 1))
+                .ToList();
+        }
     }
 }
