@@ -1,5 +1,4 @@
-﻿
-namespace DayThreeTaskOne {
+﻿namespace DayThreeTaskOne {
     public class SchematicRow {
         public List<SchematicNumber> Numbers { get; set; } = new();
 
